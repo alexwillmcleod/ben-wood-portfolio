@@ -36,7 +36,7 @@ html {
 .nav-link {
   font-family: Product Sans;
   text-decoration: none;
-  font-size: max(2vw, 1.4rem);
+  font-size: max(2vw, 1.1rem);
 
   background: linear-gradient(156deg, #a463bf, #3398db);
 
