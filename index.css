@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-@keyframes backgroundscroller {
-  from {
-    background-position: 0% 0%;
-  }
-  to {
-    background-position: 500% 500%, 400% 400%, 300% 300%, 200% 200%, 100% 100%;
-  }
-}
-
 html {
   background: radial-gradient(
     circle at center right,
@@ -27,8 +18,8 @@ html {
 
 .nav-bar {
   position: absolute;
-  width: 100%;
-  padding: 6rem 10rem;
+  width: 100vw;
+  padding: max(8vw, 4rem) max(10vw, 4rem);
   z-index: 4;
 }
 
@@ -45,7 +36,8 @@ html {
 .nav-link {
   font-family: Product Sans;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: max(2vw, 1.4rem);
+
   background: linear-gradient(156deg, #a463bf, #3398db);
 
   background-clip: text;
@@ -57,7 +49,7 @@ html {
 
 .card {
   position: relative;
-  padding: 10rem;
+  padding: max(10vw, 4rem);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -76,12 +68,16 @@ html {
 }
 
 .title.name {
-  font-size: 8rem;
+  font-size: max(4.8vw, 2.8rem);
 }
 
 .title.profession {
-  font-size: 3rem;
+  font-size: max(3.8vw, 1.8rem);
   font-style: italic;
+}
+
+.link-icon {
+  width: max(4vw, 32px);
 }
 
 .title.about {
@@ -93,11 +89,12 @@ html {
 }
 
 .about-card .about-paragraph {
+  margin-top: 2rem;
   background-color: #191a1c;
   font-family: Product Sans;
   font-size: 1.8rem;
   color: white;
-  width: 40vw;
+  width: max(50vw, 300px);
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -120,7 +117,7 @@ html {
   font-family: Product Sans;
   font-size: 1.8rem;
   color: white;
-  width: 40rem;
+  width: max(40vw, 300px);
   height: 20rem;
   border-radius: 0.5rem;
 }
@@ -162,7 +159,7 @@ html {
   font-family: Product Sans;
   font-size: 1.4rem;
   color: white;
-  width: 40vw;
+  width: max(40vw, 300px);
   padding: 1rem;
   border-radius: 0.5rem;
 }
